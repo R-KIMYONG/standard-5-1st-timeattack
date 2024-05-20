@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoForm from "./components/TodoForm.jsx";
 import TodoList from "./components/TodoList.jsx";
+import "./App.css";
 
 export default function App() {
 

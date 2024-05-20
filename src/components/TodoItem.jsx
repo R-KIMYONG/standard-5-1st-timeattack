@@ -2,7 +2,7 @@ export default function TodoItem({ todos, setTodos, iswork }) {
   const handleToggletodos = (itemId) => {
     setTodos((prev) =>
       prev.map((item) =>
-        item.id === itemId ? { ...prev, isDone: !item.isDone } : item
+        item.id === itemId ? { ...item, isDone: !item.isDone } : item
       )
     );
   };
@@ -19,7 +19,7 @@ export default function TodoItem({ todos, setTodos, iswork }) {
           .map((item) => (
             <li key={item.id} id={item.id}>
               <h3>{item.title}</h3>
-              <h3>{item.contnet}</h3>
+              <h3>{item.contents}</h3>
               <div>
                 <button
                   onClick={() => {
